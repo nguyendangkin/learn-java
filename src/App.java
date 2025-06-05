@@ -42,6 +42,7 @@ public class App {
                 break;
             default:
                 System.out.println("Lựa chọn không hợp lệ!");
+                System.exit(0);
         }
 
         scanner.close();
