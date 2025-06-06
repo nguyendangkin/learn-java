@@ -7,22 +7,10 @@ public class App {
         int number = scanner.nextInt();
         scanner.close();
 
-        if (number < 2) {
-            System.out.println(number + " không phải là số nguyên tố.");
-        } else {
-            boolean isPrime = true;
-            for (int i = 2; i <= Math.sqrt(number); i++) {
-                if (number % i == 0) {
-                    isPrime = false;
-                    break; // Tìm thấy ước số thì dừng luôn
-                }
-            }
-            if (isPrime) {
-                System.out.println(number + " là số nguyên tố.");
-            } else {
-                System.out.println(number + " không phải là số nguyên tố.");
-            }
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("%d x %d = %d%n", number, i, number * i);
         }
+
     }
 
 }
