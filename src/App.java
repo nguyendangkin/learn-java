@@ -1,15 +1,12 @@
 
-import tutorial.SinhVien;
-import tutorial.SinhVienCoKhi;
-import tutorial.SinhVienIt;
+import tutorial.Student;
 
 public class App {
     public static void main(String[] args) {
-        SinhVien it1 = new SinhVienIt(7, 2);
-        System.out.println("DIen sinh vien it: " + it1.getScore());
-
-        SinhVien coKhi1 = new SinhVienCoKhi(22, 33);
-        System.out.println("Diem sinh vien co khi: " + coKhi1.getScore());
+        Student st1 = new Student("12", "chin", 22, 3);
+        System.out.println(st1);
+        st1.setGrade();
+        System.out.println(st1);
     }
 
 }
